@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class GoogleJibDockerApplication {
 
 
-    @GetMapping("/message")
-    public String message(){
-        return "Hello Google Jib for Docker.";
-    }
     public static void main(String[] args) {
         SpringApplication.run(GoogleJibDockerApplication.class, args);
+    }
+
+    @GetMapping("/message")
+    public String message() {
+        return "Hello Google Jib for Docker.";
     }
 
 }
